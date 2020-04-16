@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'ir.saatgroup..simpleNewsServer'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'com.bladejava:blade-mvc:2.0.14.RELEASE'
+    implementation 'org.apache.lucene:lucene-core:8.4.0'
+    implementation 'org.apache.lucene:lucene-analyzers-common:8.4.0'
+    implementation 'org.apache.lucene:lucene-queryparser:8.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+}
